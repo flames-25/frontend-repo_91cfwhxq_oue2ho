@@ -1,0 +1,50 @@
+:root { --brand-grad: linear-gradient(90deg, #ff2a2a, #ff7a2a, #ffd02a, #28d17c); }
+.card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 18px;
+  color: #e5e7eb;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+  backdrop-filter: blur(6px);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 10px 40px rgba(255, 122, 42, 0.25);
+}
+.header h3 {
+  margin: 0 0 8px 0;
+  color: white;
+}
+.prices { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 12px; }
+.badge {
+  display: inline-block;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+}
+.price {
+  margin: 6px 0 0 0;
+  font-weight: 800;
+  font-size: 22px;
+  background: var(--brand-grad);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.list { margin: 12px 0 16px; padding-left: 18px; }
+.list li { margin: 6px 0; color: #cbd5e1; }
+.btn {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: var(--brand-grad);
+  color: #0a0a0a;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 0 20px rgba(255,122,42,0.3);
+}
+.btn:hover { box-shadow: 0 0 28px rgba(40,209,124,0.4); }

@@ -1,0 +1,8 @@
+:root { --brand-grad: linear-gradient(90deg, #ff2a2a, #ff7a2a, #ffd02a, #28d17c); }
+.section { background: #0a0a0a; color: #e5e7eb; padding: 80px 0; }
+.inner { max-width: 900px; margin: 0 auto; padding: 0 20px; text-align: center; }
+.title { font-size: clamp(24px, 4vw, 40px); color: white; margin-bottom: 16px; }
+.slider { position: relative; height: 160px; display: grid; place-items: center; overflow: hidden; }
+.slide { max-width: 760px; }
+.text { font-size: 20px; line-height: 1.6; color: #e5e7eb; }
+.author { margin-top: 10px; background: var(--brand-grad); -webkit-background-clip: text; background-clip: text; color: transparent; font-weight: 700; }

@@ -1,0 +1,6 @@
+:root { --brand-grad: linear-gradient(90deg, #ff2a2a, #ff7a2a, #ffd02a, #28d17c); }
+.section { background: #0b0b0b; color: #e5e7eb; padding: 80px 0; }
+.inner { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+.card { border-radius: 16px; padding: 24px; border: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.03); box-shadow: 0 10px 40px rgba(0,0,0,0.45); }
+.card h2 { margin: 0 0 8px; color: white; font-size: 28px; }
+.card p { color: #cbd5e1; }

@@ -1,0 +1,10 @@
+:root { --brand-grad: linear-gradient(90deg, #ff2a2a, #ff7a2a, #ffd02a, #28d17c); }
+.footer { background: #0a0a0a; color: #cbd5e1; border-top: 1px solid rgba(255,255,255,0.08); }
+.inner { max-width: 1100px; margin: 0 auto; padding: 28px 20px; display: grid; gap: 18px; }
+.brand .logo { font-weight: 800; color: white; }
+.brand .logo span { background: var(--brand-grad); -webkit-background-clip: text; background-clip: text; color: transparent; text-shadow: 0 0 18px rgba(255,122,42,0.35); }
+.socials { display: flex; gap: 14px; }
+.socials a { color: #e5e7eb; text-decoration: none; border-bottom: 1px dashed rgba(255,255,255,0.2); }
+.copy { text-align: center; padding: 14px; border-top: 1px solid rgba(255,255,255,0.06); color: #9ca3af; font-size: 12px; }
+
+@media (min-width: 768px) { .inner { grid-template-columns: 1fr auto; align-items: center; } }

@@ -1,0 +1,95 @@
+:root {
+  --brand-grad: linear-gradient(90deg, #ff2a2a, #ff7a2a, #ffd02a, #28d17c);
+}
+.wrapper {
+  position: relative;
+  min-height: 92vh;
+  background: #0a0a0a;
+  overflow: hidden;
+  display: grid;
+  align-items: center;
+}
+
+.splineWrap {
+  position: absolute;
+  inset: 0;
+}
+
+.gradOverlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(60% 60% at 50% 40%, rgba(255,122,42,0.15) 0%, rgba(40,209,124,0.15) 30%, transparent 70%),
+              radial-gradient(40% 40% at 70% 70%, rgba(255,42,42,0.25) 0%, transparent 60%);
+  mix-blend-mode: screen;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 120px 20px 80px;
+  text-align: center;
+  color: #e5e7eb;
+}
+
+.kicker {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #9ca3af;
+}
+
+.title {
+  font-size: clamp(34px, 7vw, 72px);
+  line-height: 1.05;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: white;
+}
+
+.title span {
+  background: var(--brand-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 34px rgba(255, 122, 42, 0.35);
+}
+
+.subtitle {
+  max-width: 720px;
+  margin: 16px auto 0;
+  color: #cbd5e1;
+}
+
+.ctaRow {
+  margin-top: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.primaryBtn, .ghostBtn {
+  padding: 12px 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+
+.primaryBtn {
+  background: var(--brand-grad);
+  color: #0a0a0a;
+  box-shadow: 0 0 24px rgba(255, 122, 42, 0.35), inset 0 0 0 1px rgba(0,0,0,0.2);
+}
+
+.primaryBtn:hover { transform: translateY(-2px) scale(1.02); box-shadow: 0 0 36px rgba(255, 208, 42, 0.45); }
+
+.ghostBtn {
+  color: white;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.02);
+}
+
+.ghostBtn:hover { transform: translateY(-2px) scale(1.02); box-shadow: 0 0 28px rgba(40,209,124,0.35); }
